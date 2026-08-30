@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>不動産現場専用 業務カイゼンエンジニア（FDE） | 泥臭い手作業・コピペをゼロに</title>
+  <meta name="description" content="パッケージソフトの販売ではなく、不動産現場に直接入り込み、レインズ・ポータルの転記やPDF打ち替えなどの面倒な手作業をピンポイントで自動化します。まずは無料プロトタイプから。">
+  
+  <!-- Google Fonts & Tailwind CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Noto Sans JP"', '"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              500: '#0284c7',
+              600: '#0369a1',
+              accent: '#059669',
+              accentHover: '#047857',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .gradient-text {
+      background: linear-gradient(135deg, #0284c7 0%, #4f46e5 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-bg {
+      background: radial-gradient(circle at 50% -20%, rgba(14, 165, 233, 0.08), transparent 70%),
+                  linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200/80">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-sky-600 to-indigo-600 flex items-center justify-center shadow-md shadow-sky-500/20">
+          <i data-lucide="cpu" class="w-5 h-5 text-white"></i>
+        </div>
+        <div>
+          <span class="font-bold text-base sm:text-lg tracking-tight text-slate-900 block leading-tight">不動産FDE</span>
+          <span class="text-[10px] text-slate-500 font-medium">業務カイゼンエンジニア</span>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="#features" class="hidden sm:inline-flex items-center px-4 py-2 text-xs font-semibold text-slate-600 hover:text-slate-900 transition">
+          サービス概要
+        </a>
+        <a href="https://forms.gle/4HnHp5vB8HHZCKe79" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm shadow-md shadow-emerald-600/20 transition transform hover:-translate-y-0.5">
+          <span>無料プロトタイプを試す</span>
+          <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-32 sm:pt-40 pb-20 sm:pb-24 overflow-hidden hero-bg">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10">
+      
+      <!-- Badge -->
+      <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs sm:text-sm font-semibold mb-6 shadow-sm">
+        <i data-lucide="sparkles" class="w-4 h-4 text-sky-600"></i>
+        <span>高価なシステム刷新は不要・既存SaaSをそのまま活用</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight sm:leading-tight mb-6 text-slate-900">
+        大手SaaSを入れても残る<br class="hidden sm:inline">
+        <span class="gradient-text">「あの手作業・コピペ業務」</span>、<br>
+        直接入ってゼロにします。
+      </h1>
+
+      <!-- Subcopy -->
+      <p class="text-base sm:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed mb-10">
+        パッケージソフトの販売ではありません。<br class="hidden sm:inline">
+        不動産現場に直接入り込み、貴社固有の「面倒な手作業」をプログラムとAIで直接自動化する新しい支援スタイルです。
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+        <a href="https://forms.gle/4HnHp5vB8HHZCKe79" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-4 rounded-xl text-base shadow-xl shadow-emerald-600/20 transition transform hover:-translate-y-0.5">
+          <span>まずは1つの業務を無料でお試し</span>
+          <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+        </a>
+      </div>
+      <p class="text-xs text-slate-500 mt-4">※ 初回30分の現場ヒアリング ＆ 簡易プロトタイプ作成は完全無料</p>
+
+      <!-- Stats / Impact Banner -->
+      <div class="mt-16 pt-8 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-3 gap-6 text-left max-w-4xl mx-auto">
+        <div class="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition">
+          <div class="text-xs font-semibold text-slate-500 mb-1">営業現場の実態</div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-amber-600 mb-1">30〜40%</div>
+          <div class="text-xs text-slate-600">本来注力すべき「接客・追客・内見」に使える時間。残りは全て事務作業。</div>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition">
+          <div class="text-xs font-semibold text-slate-500 mb-1">導入スピード</div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-sky-600 mb-1">1〜2週間</div>
+          <div class="text-xs text-slate-600">既存ルールを変えずに、わずか短期で「ボタン1つ・完全自動」を実現。</div>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition">
+          <div class="text-xs font-semibold text-slate-500 mb-1">システム買い替え</div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-600 mb-1">不要 (¥0)</div>
+          <div class="text-xs text-slate-600">今の基幹システムやExcelの「スキマ」を直接スクリプトで橋渡し。</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section class="py-20 bg-slate-50/80 relative border-y border-slate-200/80">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-wider text-rose-700 bg-rose-50 px-3.5 py-1.5 rounded-full border border-rose-200">
+          不動産現場の課題
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight mt-4 text-slate-900">
+          営業の時間が「事務作業」に奪われていませんか？
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 mt-3">
+          高額なSaaSを契約しても、結局現場には泥臭い「手作業」が残っていませんか？
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Card 1 -->
+        <div class="p-7 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:shadow-md transition relative overflow-hidden group">
+          <div class="w-12 h-12 rounded-xl bg-rose-50 border border-rose-100 flex items-center justify-center mb-6 text-rose-600">
+            <i data-lucide="copy" class="w-6 h-6"></i>
+          </div>
+          <div class="text-xs font-bold text-rose-600 mb-2">課題 01</div>
+          <h3 class="text-lg font-bold text-slate-900 mb-3">コピペ作業の地獄<br><span class="text-slate-500 text-sm font-normal">（二重・三重入力）</span></h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            レインズやポータルの物件情報を、自社のExcelや管理システムへ毎日1件ずつ手入力で転記し、貴重な時間が消えている。
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="p-7 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:shadow-md transition relative overflow-hidden group">
+          <div class="w-12 h-12 rounded-xl bg-amber-50 border border-amber-100 flex items-center justify-center mb-6 text-amber-600">
+            <i data-lucide="split" class="w-6 h-6"></i>
+          </div>
+          <div class="text-xs font-bold text-amber-600 mb-2">課題 02</div>
+          <h3 class="text-lg font-bold text-slate-900 mb-3">SaaSの「スキマ」作業<br><span class="text-slate-500 text-sm font-normal">（CSVの手直し）</span></h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            「システムAからCSVをダウンロードして手作業で加工し、システムBへ登録する」という無駄な橋渡し作業が残っている。
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="p-7 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:shadow-md transition relative overflow-hidden group">
+          <div class="w-12 h-12 rounded-xl bg-purple-50 border border-purple-100 flex items-center justify-center mb-6 text-purple-600">
+            <i data-lucide="file-text" class="w-6 h-6"></i>
+          </div>
+          <div class="text-xs font-bold text-purple-600 mb-2">課題 03</div>
+          <h3 class="text-lg font-bold text-slate-900 mb-3">PDFチラシの目視打ち替え<br><span class="text-slate-500 text-sm font-normal">（手動の帯替え・抽出）</span></h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            他社物件チラシから帯替えや情報抽出をするため、毎回スタッフが目で確認しながら手打ちで再入力を行っている。
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Solution Section -->
+  <section id="features" class="py-20 relative bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-wider text-sky-700 bg-sky-50 px-3.5 py-1.5 rounded-full border border-sky-200">
+          解決アプローチ
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight mt-4 text-slate-900">
+          「既存システムを買い替える」必要はありません。<br>
+          システム間の“スキマ”を直接埋めます。
+        </h2>
+      </div>
+
+      <div class="space-y-6">
+        
+        <!-- Step 1 -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-slate-50/70 border border-slate-200/80 flex flex-col md:flex-row items-start md:items-center gap-6 shadow-sm">
+          <div class="w-14 h-14 rounded-2xl bg-sky-600 flex items-center justify-center flex-shrink-0 text-white font-black text-xl shadow-md shadow-sky-600/20">
+            01
+          </div>
+          <div class="flex-1">
+            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2">現場への直接入り込み</h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              フルスタックエンジニアが貴社の現場（またはオンライン）に直接入り、日常のコピペや二重入力を細かく観察・棚卸しします。業務のボトルネックをその場で特定します。
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-slate-50/70 border border-slate-200/80 flex flex-col md:flex-row items-start md:items-center gap-6 shadow-sm">
+          <div class="w-14 h-14 rounded-2xl bg-indigo-600 flex items-center justify-center flex-shrink-0 text-white font-black text-xl shadow-md shadow-indigo-600/20">
+            02
+          </div>
+          <div class="flex-1">
+            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2">スキマを埋めるピンポイント自動化</h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              高価なシステム刷新は不要。既存の基幹システムやSaaSはそのまま活かし、手作業で繋いでいる部分だけを専用スクリプトや生成AIでシームレスに連携します。
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="p-6 sm:p-8 rounded-2xl bg-slate-50/70 border border-slate-200/80 flex flex-col md:flex-row items-start md:items-center gap-6 shadow-sm">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-600 flex items-center justify-center flex-shrink-0 text-white font-black text-xl shadow-md shadow-emerald-600/20">
+            03
+          </div>
+          <div class="flex-1">
+            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2">現場ルールを崩さない超高速改善</h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              現場のスタッフが使い慣れた運用フローを変えずに、わずか1〜2週間の短期間で「ボタン1つ」「完全自動」のカイゼンを実現します。
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Use Cases / Features -->
+  <section class="py-20 bg-slate-50/80 border-y border-slate-200/80">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200">
+          自動化の実績例
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight mt-4 text-slate-900">
+          こんな「1件5分の泥臭い手作業」を即日自動化してきました
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Case 1 -->
+        <div class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center mb-4 border border-sky-100">
+              <i data-lucide="database" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-2">ポータル/レインズ自動抽出</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              毎日決まった時間に行っていた物件情報の収集・転記を自動プログラムが実行。自社管理シートへ即座に反映します。
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs text-sky-700 font-semibold flex items-center">
+            <i data-lucide="check" class="w-4 h-4 mr-1 text-sky-600"></i> 毎日1〜2時間の転記工数をゼロに
+          </div>
+        </div>
+
+        <!-- Case 2 -->
+        <div class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-4 border border-indigo-100">
+              <i data-lucide="scan-line" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-2">PDF/画像からのAI構造化</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              送られてくる物件概要書（PDF）から、AIが賃料・間取り・築年数などを自動解析し、データベースへダイレクト登録。
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs text-indigo-700 font-semibold flex items-center">
+            <i data-lucide="check" class="w-4 h-4 mr-1 text-indigo-600"></i> チラシの目視確認・打ち替え不要
+          </div>
+        </div>
+
+        <!-- Case 3 -->
+        <div class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4 border border-emerald-100">
+              <i data-lucide="bell-ring" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-2">自動通知＆システム間連携</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              特定条件に合致する顧客データや反響が入った瞬間、LINE・Slack・カレンダーへ即時に連携通知を飛ばします。
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs text-emerald-700 font-semibold flex items-center">
+            <i data-lucide="check" class="w-4 h-4 mr-1 text-emerald-600"></i> 追客の初動スピードを最大化
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Free Trial Flow -->
+  <section class="py-20 relative bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <div class="p-8 sm:p-12 rounded-3xl bg-gradient-to-b from-sky-50/50 to-indigo-50/40 border border-sky-100 shadow-xl relative overflow-hidden">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100/80 px-3.5 py-1.5 rounded-full border border-emerald-200">
+            特別ご提案オファー
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-4">
+            「初回ヒアリング＆簡易プロトタイプ構築」は<br class="hidden sm:inline">完全に無料で実施いたします
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-2">
+            まずは「1つの手作業業務」からお試しください（スモールスタート）
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+          
+          <div class="p-5 rounded-2xl bg-white border border-slate-200/80 text-center shadow-sm">
+            <div class="text-xs font-bold text-sky-600 mb-1">STEP 01</div>
+            <div class="font-bold text-slate-900 text-sm mb-2">現場ヒアリング（30分）</div>
+            <p class="text-xs text-slate-500 leading-relaxed">経営者様・現場リーダーから「一番無駄だと感じる手作業」を1点ヒアリング</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white border border-slate-200/80 text-center shadow-sm">
+            <div class="text-xs font-bold text-indigo-600 mb-1">STEP 02</div>
+            <div class="font-bold text-slate-900 text-sm mb-2">簡易プロトタイプ（約1週）</div>
+            <p class="text-xs text-slate-500 leading-relaxed">実際の作業を自動化する実効力のあるデモ/スクリプトを提示</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white border border-slate-200/80 text-center shadow-sm">
+            <div class="text-xs font-bold text-emerald-600 mb-1">STEP 03</div>
+            <div class="font-bold text-slate-900 text-sm mb-2">試行運用・効果検証</div>
+            <p class="text-xs text-slate-500 leading-relaxed">現場で実際に動かし、削減できた工数と使い勝手を検証</p>
+          </div>
+
+        </div>
+
+        <div class="text-center">
+          <a href="https://forms.gle/4HnHp5vB8HHZCKe79" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-4 rounded-xl text-base shadow-lg shadow-emerald-600/20 transition transform hover:-translate-y-0.5">
+            <span>無料相談・プロトタイプ作成を申し込む</span>
+            <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section (Google Form Guide) -->
+  <section id="contact" class="py-20 bg-slate-50/80 border-t border-slate-200/80">
+    <div class="max-w-xl mx-auto px-4 sm:px-6 text-center">
+      
+      <div class="p-8 sm:p-10 rounded-3xl bg-white border border-slate-200/90 shadow-xl">
+        <div class="w-14 h-14 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mx-auto mb-6 text-emerald-600">
+          <i data-lucide="message-square" class="w-7 h-7"></i>
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">お問い合わせ・無料相談</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-8">
+          貴社で「無駄だな」と感じている手作業を教えてください。<br>
+          Googleフォームより24時間いつでも受け付けております。
+        </p>
+
+        <a href="https://forms.gle/4HnHp5vB8HHZCKe79" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center space-x-2 py-4 px-6 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base shadow-lg shadow-emerald-600/20 transition transform hover:-translate-y-0.5">
+          <span>Googleフォームでお問い合わせ（1分）</span>
+          <i data-lucide="external-link" class="w-5 h-5"></i>
+        </a>
+        
+        <p class="text-xs text-slate-400 mt-4">※ 別ウィンドウでGoogleフォームが開きます</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-white border-t border-slate-200 text-center text-xs text-slate-500">
+    <div class="max-w-5xl mx-auto px-4">
+      <p>© 2026 不動産現場専用 業務カイゼンエンジニア（FDE）. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Lucide Icons Initialize -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
